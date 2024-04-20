@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/20 18:31:15 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/20 19:59:58 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,16 @@ private:
   long long   ad;
 
 public:
-  ClapTrap    (std::string& name);
+  ClapTrap    ( void );
+  ClapTrap    ( const ClapTrap& obj );
+  ClapTrap    ( const std::string& name );
   ~ClapTrap   ( void );
 
   void        attack( const std::string& target );
   void        takeDamage( unsigned int amount );
   void        beRepaired( unsigned int amount );
+
+  ClapTrap&   operator=(const ClapTrap& obj);
 };
 
 #endif

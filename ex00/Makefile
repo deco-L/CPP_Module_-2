@@ -6,12 +6,12 @@
 #    By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#              #
-#    Updated: 2024/04/15 13:35:57 by csakamot         ###   ########.fr        #
+#    Updated: 2024/04/20 20:36:27 by csakamot         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ##----Executable File Name-----##
-NAME			= Fixed
+NAME			= ClapTrap
 ##-----------------------------##
 
 ##-----Directory Location------##
