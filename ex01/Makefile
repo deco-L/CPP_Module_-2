@@ -6,12 +6,12 @@
 #    By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#              #
-#    Updated: 2024/04/15 13:35:48 by csakamot         ###   ########.fr        #
+#    Updated: 2024/04/21 14:58:31 by csakamot         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ##----Executable File Name-----##
-NAME			= Fixed
+NAME			= ScavTrap
 ##-----------------------------##
 
 ##-----Directory Location------##
@@ -23,7 +23,7 @@ OBJDIR			= objs/
 ##-----------------------------##
 
 ##------------Srcs-------------##
-MAINSRC			=	main.cpp lapTrap.cpp ScavTrap.cpp
+MAINSRC			=	main.cpp ClapTrap.cpp ScavTrap.cpp
 
 SRCS			= $(addprefix $(SRCDIR), ${MAINSRC})
 ##-----------------------------##

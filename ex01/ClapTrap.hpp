@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/20 20:58:40 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:34:30 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@
 #include <iostream>
 
 class ClapTrap {
-private:
+protected:
   std::string name;
   long long   hp;
   long long   ep;
   long long   ad;
 
 public:
-  ClapTrap    ( void );
-  ClapTrap    ( const ClapTrap& obj );
-  ClapTrap    ( const std::string& name );
-  ~ClapTrap   ( void );
+  ClapTrap( void );
+  ClapTrap( const ClapTrap& obj );
+  ClapTrap( const std::string& name );
+  ~ClapTrap( void );
 
   void        attack( const std::string& target );
   void        takeDamage( unsigned int amount );

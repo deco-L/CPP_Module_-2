@@ -6,13 +6,13 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/20 20:58:47 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:48:58 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void):
+ClapTrap::ClapTrap(void) :
 name("none"), hp(10), ep(10), ad(0) {
   std::cout << "\e[1;92mClapTrap default constructor called\e[0m" << std::endl
             << "ClapTrap \e[1;96m" << name << "\e[0m status" << std::endl
@@ -30,7 +30,7 @@ ClapTrap::ClapTrap(const ClapTrap& obj) {
             << "ad = " << ad << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string& name):
+ClapTrap::ClapTrap(const std::string& name) :
 name(name), hp(10), ep(10), ad(0) {
   std::cout << "\e[1;92mClapTrap constructor called\e[0m" << std::endl
             << "ClapTrap \e[1;96m" << name << "\e[0m status" << std::endl
@@ -40,7 +40,7 @@ name(name), hp(10), ep(10), ad(0) {
 }
 
 ClapTrap::~ClapTrap(void) {
-  std::cout << "\e[1;96m" << name << " \e[0m"
+  std::cout << "ClapTrap \e[1;96m" << name << " \e[0m"
             << "> byebye~" << std::endl;
 }
 
@@ -52,7 +52,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& obj) {
     this->ad = obj.ad;
   }
   else
-    std::cout << "\e[1;31mError: "
+    std::cout << "\e[1;31mClapTrap Error: "
               << "Attempted self-assignment in copy assignment operator"
               << "\e[0m"
               << std::endl;
@@ -64,7 +64,7 @@ void ClapTrap::attack(const std::string& target) {
     std::cout << "\e[1;91mClapTrap " << name << " has no hit points.\e[0m"
               << std::endl;
   else if (ep == 0)
-    std::cout << "\e[1;91mNo energy points.\e[0m" << std::endl;
+    std::cout << "\e[1;91mClapTrap : No energy points.\e[0m" << std::endl;
   else {
   ep--;
   std::cout << "ClapTrap \e[1;96m" << name << "\e[0m attacks \e[1;95m"
