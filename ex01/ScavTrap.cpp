@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/21 16:04:20 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/21 17:53:37 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,10 +82,28 @@ void ScavTrap::attack(const std::string& target) {
   }
 }
 
+void ScavTrap::beRepaired(unsigned int amount) {
+  if (ep > 0 && hp > 0 && hp + amount <= 100)
+  {
+    std::cout << "\e[1;96m" << name << "\e[0m repaired itself and "
+              << "recovered \e[1;92m" << amount << "\e[0m points."
+              << std::endl;
+    hp += amount;
+    ep--;
+  } else if (ep == 0)
+    std::cout << "\e[1;91mNo energy points.\e[0m" << std::endl;
+  else if (hp == 0)
+    std::cout << "\e[1;91m" << name << " has no hit points.\e[0m"
+              << std::endl;
+  else
+    std::cout << "\e[1;96m" << name << "\e[0m cannot be a hit point"
+              << " greater than\e[1;92m 100 \e[0mpoints." << std::endl;
+}
+
 void ScavTrap::guardGate(void) {
   if (guardGateMode) {
     guardGateMode = false;
-    std::cout << "\e[1;93mScavTrap is already in gatekeeper mode.\e[0m"
+    std::cout << "\e[1;91mScavTrap is already in gatekeeper mode.\e[0m"
               << std::endl;
     return ;
   }
