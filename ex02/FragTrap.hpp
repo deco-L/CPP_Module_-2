@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/22 17:23:59 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/24 18:17:22 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ public:
   ~FragTrap( void );
 
   void      highFiveGuys( void );
+  void      beRepaired( unsigned int amount );
 
   FragTrap& operator=( const FragTrap& obj );
 };
