@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/26 12:43:07 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/28 23:42:42 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ public:
   DiamondTrap( const DiamondTrap& obj );
   DiamondTrap( const std::string& name );
 
+  void  attack( const std::string& target );
+  void  beRepaired( unsigned int amount );
   void  whoAmI( void );
 
   DiamondTrap& operator=( const DiamondTrap& obj );

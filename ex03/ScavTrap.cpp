@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/28 18:10:22 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/28 23:18:40 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ ClapTrap() {
 }
 
 ScavTrap::ScavTrap(const ScavTrap& obj) :
-ScavTrap() {
+ClapTrap() {
   *this = obj;
   std::cout << "\e[1;92mScavTrap copy constructor called\e[0m" << std::endl
             << "ScavTrap \e[1;96m" << name << "\e[0m status" << std::endl

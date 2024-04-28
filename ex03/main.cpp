@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/24 18:29:41 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/28 23:47:44 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,17 @@ static void draw_terminal_line() {
 }
 
 int main(void) {
+  draw_terminal_line();
+  DiamondTrap human1;
+  DiamondTrap human2("yamda");
+  DiamondTrap human3("yayamada");
+
+  human1.whoAmI();
+  human2.whoAmI();
+  human3.whoAmI();
+  human1.beRepaired(10);
+  human2.takeDamage(100);
+  human2.beRepaired(10);
+  draw_terminal_line();
   return (EXIT_SUCCESS);
 }
