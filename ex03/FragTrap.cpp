@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/24 18:26:38 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/04/28 18:10:34 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ ClapTrap() {
 }
 
 FragTrap::FragTrap(const FragTrap& obj) :
-ClapTrap() {
+FragTrap() {
  *this = obj;
   std::cout << "\e[1;92mFragTrap copy constructor called\e[0m" << std::endl
             << "FragTrap \e[1;96m" << name << "\e[0m status" << std::endl
