@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
 #ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
 
 #include <cstdlib>
 #include <iostream>
