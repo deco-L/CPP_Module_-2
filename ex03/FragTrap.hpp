@@ -6,7 +6,7 @@
 /*   By: csakamot <csakamot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:21:20 by csakamot          #+#    #+#             */
-/*   Updated: 2024/04/29 01:13:45 by csakamot         ###   ########.fr       */
+/*   Updated: 2024/05/18 18:08:55 by csakamot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 
 #include "ClapTrap.hpp"
 
-class FragTrap : virtual public ClapTrap {
+class FragTrap : virtual public ClapTrap
+{
 private:
 public:
   FragTrap( void );
